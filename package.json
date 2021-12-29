@@ -1,7 +1,6 @@
 {
   "name": "desafio_sass_cosseddu",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build-css": "node-sass --include-path scss scss/style.scss css/style.css",
@@ -19,7 +18,8 @@
   },
   "homepage": "https://github.com/giomck/Desafio_SASS_Cosseddu#readme",
   "dependencies": {
-    "node-sass": "^7.0.0",
+    "node-sass": "^7.0.1",
     "nodemon": "^2.0.15"
-  }
+  },
+  "description": ""
 }
