@@ -2,6 +2,7 @@
     height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
+    margin-bottom: 5px;
     h1{
         font-size: 80px;
         font-variant: small-caps;
@@ -9,16 +10,16 @@
         color: whitesmoke;
     }
     .portada1{
-        // height: 40vh;
         display: flex;
+        flex-direction: column;
         justify-content: center;
-        align-items: flex-start;
+        align-items: center;
     }
     .portada1 p{
         color: whitesmoke;
         font-size: 23px;
         font-style: italic;
-    }
+        text-decoration: none;    }
 }
 .section1{
     .section1_1{
@@ -29,6 +30,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-bottom: 5px;
     }
     h2{
         color: whitesmoke;
@@ -41,6 +43,7 @@
         font-size: 20px;
         font-style: italic;
         text-align: center;
+        text-decoration: none;
     }
     .section1_2{
         height: 100vh;
@@ -61,6 +64,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 5px;
     }
     h3{
         font-size: 80px;
@@ -72,6 +76,7 @@
         color: whitesmoke;
         font-size: 23px;
         font-style: italic;
+        text-decoration: none;
     }
 }    
 .footer1{
