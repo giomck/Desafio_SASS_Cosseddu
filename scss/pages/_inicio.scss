@@ -1,4 +1,10 @@
 $colores: (blanco: whitesmoke, dorado: #8A7D5C, rojo: #841617);
+@mixin flex($dir,$just,$ali) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $just;
+    align-items: $ali;
+}
 
 .logo{
     padding-right: 100px;
@@ -15,9 +21,7 @@ $colores: (blanco: whitesmoke, dorado: #8A7D5C, rojo: #841617);
         color: map-get($map: $colores, $key: blanco);
     }
     .portada1{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        @include flex(column, center , center);
         margin-top: 150px;
     }
     p{
@@ -35,11 +39,8 @@ $colores: (blanco: whitesmoke, dorado: #8A7D5C, rojo: #841617);
         height: 100vh;
         background-repeat: no-repeat;
         background-size: cover;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         margin-bottom: 5px;
+        @include flex(column, center , center);
     }
     h2{
         font-size: 60px;
@@ -65,11 +66,8 @@ $colores: (blanco: whitesmoke, dorado: #8A7D5C, rojo: #841617);
         height: 100vh;
         background-size: cover;
         background-repeat: no-repeat;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
         margin-bottom: 5px;
+        @include flex(column, center , center);
     }
     h3{
         font-size: 80px;
