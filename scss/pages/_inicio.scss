@@ -1,3 +1,8 @@
+$colores: (blanco: whitesmoke, dorado: #8A7D5C, rojo: #841617);
+
+.logo{
+    padding-right: 100px;
+}
 .portada{
     height: 80vh;
     background-repeat: no-repeat;
@@ -7,19 +12,23 @@
         font-size: 80px;
         font-variant: small-caps;
         font-weight: bold;
-        color: whitesmoke;
+        color: map-get($map: $colores, $key: blanco);
     }
     .portada1{
         display: flex;
         flex-direction: column;
-        justify-content: center;
         align-items: center;
+        margin-top: 150px;
     }
-    .portada1 p{
+    p{
         color: whitesmoke;
         font-size: 23px;
         font-style: italic;
-        text-decoration: none;    }
+        }
+    a{
+        text-decoration: none;
+    }
+    
 }
 .section1{
     .section1_1{
@@ -33,16 +42,18 @@
         margin-bottom: 5px;
     }
     h2{
-        color: whitesmoke;
         font-size: 60px;
         font-variant: small-caps;
         font-weight: bold;
+        color: map-get($map: $colores, $key:dorado);
     }
     p{
         color: whitesmoke;
         font-size: 20px;
         font-style: italic;
         text-align: center;
+    }
+    a{
         text-decoration: none;
     }
     .section1_2{
@@ -70,12 +81,14 @@
         font-size: 80px;
         font-variant: small-caps;
         font-weight: bold;
-        color: whitesmoke; 
+        color: map-get($map: $colores, $key: rojo );
     }
     p{
         color: whitesmoke;
         font-size: 23px;
         font-style: italic;
+    }
+    a{
         text-decoration: none;
     }
 }    
@@ -91,7 +104,6 @@
         padding-top: 20px;
         font-size: 20px;
         font-variant: small-caps;
-        color: #6A6353;
     }
     img{
         width: 100px;
